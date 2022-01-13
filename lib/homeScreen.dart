@@ -1,3 +1,4 @@
+import 'package:dashbaord/custom_widgets/customCard.dart';
 import 'package:dashbaord/custom_widgets/customCardContent.dart';
 import 'package:flutter/material.dart';
 
@@ -79,131 +80,30 @@ class HomeScreen extends StatelessWidget {
                     crossAxisSpacing: 10,
                     children: [
 
-                      Card(
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: CustomCardContent(
-                          imageUrl:  'images/cap.png',
-                          text: "Glee Albert",
-                          
-                        ),
+                      CustomCard(
+                        text: 'Glee Albert',
                       ),
-
-                      Card(
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: Column(
-                          children: const [
-                            Image(
-                              image: AssetImage('images/cap.png'),
-                              height: 100.0,
-                              
-                            ),
-                            Text(
-                              'Sir David',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                            )
-                          ],
-                        ),
+                      
+                      CustomCard(
+                        text: 'Bilee Nelson',
                       ),
-
-                      Card(
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: Column(
-                          children: const [
-                            Image(
-                              image: AssetImage('images/cap.png'),
-                              height: 100.0,
-                              
-                            ),
-                            Text(
-                              'Mr Etah',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                            )
-                          ],
-                        ),
+                      
+                      CustomCard(
+                        text: 'Nash Kermbly',
                       ),
-
-                      Card(
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: Column(
-                          children: const [
-                            Image(
-                              image: AssetImage('images/cap.png'),
-                              height: 100.0,
-                              
-                            ),
-                            Text(
-                              'Gleeweh Minet',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                            )
-                          ],
-                        ),
+                      
+                      CustomCard(
+                        text: 'Timlee David',
                       ),
-
-                      Card(
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: Column(
-                          children: const [
-                            Image(
-                              image: AssetImage('images/cap.png'),
-                              height: 100.0,
-                              
-                            ),
-                            Text(
-                              'Timlee Berly',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                            )
-                          ],
-                        ),
+                      
+                      CustomCard(
+                        text: 'Jas Don',
                       ),
-                      Card(
-                        elevation: 4,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)
-                        ),
-                        child: Column(
-                          children: const [
-                            Image(
-                              image: AssetImage('images/cap.png'),
-                              height: 100.0,
-                              
-                            ),
-                            Text(
-                              'Bilee Nelson',
-                              style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 18.0,
-                              ),
-                            )
-                          ],
-                        ),
+                      
+                      CustomCard(
+                        text: 'Giweh Minet',
                       ),
+                      
                     ]
                   ),
                 )

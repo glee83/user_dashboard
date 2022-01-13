@@ -1,3 +1,4 @@
+import 'package:dashbaord/custom_widgets/customCardContent.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -70,160 +71,147 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   
-                Expanded(
-                  child: GridView.count(
-                  mainAxisSpacing: 10,
-                  crossAxisCount: 2,
-                  primary: false,
-                  crossAxisSpacing: 10,
-                  children: [
+                  Expanded(
+                    child: GridView.count(
+                    mainAxisSpacing: 10,
+                    crossAxisCount: 2,
+                    primary: false,
+                    crossAxisSpacing: 10,
+                    children: [
 
-                    Card(
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: CustomCardContent(
+                          imageUrl:  'images/cap.png',
+                          text: "Glee Albert",
+                          
+                        ),
                       ),
-                      child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('images/cap.png'),
-                            height: 100.0,
-                            
-                          ),
-                          Text(
-                            'Glee Albert',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Card(
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('images/cap.png'),
-                            height: 100.0,
-                            
-                          ),
-                          Text(
-                            'Sir David',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Card(
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('images/cap.png'),
-                            height: 100.0,
-                            
-                          ),
-                          Text(
-                            'Mr Etah',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Card(
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('images/cap.png'),
-                            height: 100.0,
-                            
-                          ),
-                          Text(
-                            'Gleeweh Minet',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Card(
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('images/cap.png'),
-                            height: 100.0,
-                            
-                          ),
-                          Text(
-                            'Timlee Berly',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    Card(
-                      elevation: 4,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(8)
-                      ),
-                      child: Column(
-                        children: const [
-                          Image(
-                            image: AssetImage('images/cap.png'),
-                            height: 100.0,
-                            
-                          ),
-                          Text(
-                            'Bilee Nelson',
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 18.0,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
 
-                  ],
-              
-                ),
-              )
-            ],
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          children: const [
+                            Image(
+                              image: AssetImage('images/cap.png'),
+                              height: 100.0,
+                              
+                            ),
+                            Text(
+                              'Sir David',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          children: const [
+                            Image(
+                              image: AssetImage('images/cap.png'),
+                              height: 100.0,
+                              
+                            ),
+                            Text(
+                              'Mr Etah',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          children: const [
+                            Image(
+                              image: AssetImage('images/cap.png'),
+                              height: 100.0,
+                              
+                            ),
+                            Text(
+                              'Gleeweh Minet',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          children: const [
+                            Image(
+                              image: AssetImage('images/cap.png'),
+                              height: 100.0,
+                              
+                            ),
+                            Text(
+                              'Timlee Berly',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Card(
+                        elevation: 4,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                        child: Column(
+                          children: const [
+                            Image(
+                              image: AssetImage('images/cap.png'),
+                              height: 100.0,
+                              
+                            ),
+                            Text(
+                              'Bilee Nelson',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 18.0,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ]
+                  ),
+                )
+              ],
+            ),
           ),
         ),
-      ),
-
-          
       ]
-
-        
       ),
     );
   }
